@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgba(244, 236, 236, 0.756);
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:rgb(248, 250, 252);
+    max-width:750px;
+    height: 950px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+.left_sidebar{
+    background-color:rgb(215, 215, 219);
+    width:300px;
+    height:940px;  
+    margin: 5px 7px;
+    padding: 13px;
+    position: relative;
+}
+
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    padding-bottom: 18px;
+}
+
+.profile .imgbox{
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid #fff;
+    margin-bottom: 20px;
+}
+
+.profile .imgbox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+ }
+.profile h2{
+    font-size: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.personal_info{
+    position: relative;
+    padding-top: 10px;
+}
+.personal_info ul{
+    position: relative;
+}
+.personal_info ul li{
+    list-style: none;
+    padding: 12px 0;
+    position: relative;
+    
+}
+.personal_info ul li .icon{
+    width: 30px;
+    padding-right: 12px;
+    font-size:20px;
+   
+}
+.personal_info ul li .info{
+    width: 30px;
+    font-size:17px;
+    font-weight: 400;
+    
+}
+.personal_info ul li .info a{
+    text-decoration: none;
+    color: black;
+}
+
+.interest,.projects{
+    position: relative;
+    padding:18px 0;
+}
+.interest h3{
+    position: relative;
+    font-size: 20px;
+    word-spacing: 3px;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+}
+.interest p{
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight:500;  
+    font-family: Helvetica, sans-serif; 
+}
+
+.projects h3{
+    position: relative;
+    font-size: 20px;
+    word-spacing: 3px;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    
+}
+.projects ul{
+    padding: 10px 0;
+    position: relative;
+}
+.projects ul li{
+    padding: 12px 0;
+    list-style: none;
+    position: relative;
+}
+.projects ul li h4{
+    font-size: 16px;
+    font-weight:600;  
+    text-transform: uppercase;
+    text-align: start;
+    word-spacing: 3.5px;
+    padding-bottom: 3px;
+    font-family: Helvetica, sans-serif;
+}
+.projects ul li h5{
+    font-size: 12px;
+    font-weight:500;  
+    text-align: start;
+    font-family: Helvetica, sans-serif;
+}
+
+.right_sidebar{
+    position: relative;
+    width:420px;  
+    padding: 8px;
+    margin: 25px 0px 0px 15px;
+}
+.education,.skills,.certificate{
+    position: relative;
+    padding-top: 8px;
+}
+.education h3{
+    position: relative;
+    font-size: 18px;
+    word-spacing: 3px;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+    width:150px;
+}
+.education,.skills,.certificate ul{
+    padding: 10px 0;
+    position: relative;
+}
+.education ul li{
+    font-size: 30px;
+    padding: 5px 0;
+    position: relative;
+}
+.education ul li h4{
+    font-size: 16px;
+    font-weight:600;  
+    text-transform: uppercase;
+    text-align: start;
+    word-spacing: 3.5px;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.education ul li p{
+    font-size: 16px;
+    text-align: start;
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: 600;
+    font-family: Helvetica, sans-serif;
+    padding-top: 3px;
+}
+
+.skills h3{
+    position: relative;
+    font-size: 18px;
+    word-spacing: 3px;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    width:150px;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.skills ul li{
+    padding: 10px 0;
+    list-style: none;
+    position: relative;
+}
+.skills ul li h4{
+    font-size: 16px;
+    font-weight:600;  
+    text-transform: uppercase;
+    text-align: start;
+    word-spacing: 3.5px;
+    padding-bottom: 7px;
+    opacity: 0.8;
+    font-family: Helvetica, sans-serif;
+}
+.skills ul li h5{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: start;
+    font-family: Helvetica, sans-serif;
+}
+
+.certificate h3{
+    position: relative;
+    font-size: 18px;
+    word-spacing: 3px;
+    border-bottom: 2px solid grey;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    width:150px;
+    font-family: Helvetica, sans-serif;
+
+}
+
+.certificate ul li{
+    padding: 8px 0;
+    list-style: none;
+    position: relative;
+}
+.certificate ul li h4{
+    font-size: 15px;
+    font-weight:500;  
+    text-transform: uppercase;
+    text-align: start;
+    word-spacing: 3.5px;
+    padding-bottom: 3px;
+    font-family: Helvetica, sans-serif;
+    opacity: 0.9;
+}
+.certificate ul li h5{
+    font-size: 13px;
+    font-weight: 500;
+    text-align: start;
+    font-family: Helvetica, sans-serif;
+}
+
+@media (max-width:1000px){
+    .main{
+        margin: px;
+        flex-direction: column;
+        height: auto;
+        background-color:rgb(215, 215, 219);
+       
+    }
+    .left_sidebar{
+        background-color:rgb(248, 250, 252);
+
+    }
+    .profile .imgbox{
+        border: 10px solid #504848;
+
+    }
+}
